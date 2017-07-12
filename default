@@ -10,7 +10,7 @@ server {
 	
 	location /apiwf2 {
     	root /root/work/nodejs/socket_wf_client_api/;
-    	proxy_pass http://localhost:3030;
+    	proxy_pass http://localhost:4002;
 	}
 
 	location /apiwf {
