@@ -8,14 +8,14 @@ server {
 
 	server_name localhost;
 	
+	location /apiwf2 {
+    	root /root/work/nodejs/socket_wf_client_api/;
+    	proxy_pass http://localhost:3030;
+	}
+
 	location /apiwf {
     	root /root/work/nodejs/WebFormApiRest/;
     	proxy_pass http://localhost:7000;
-	}
-
-	location /socketCliente {
-    	root /root/work/nodejs/socket_wf_client_api/;
-    	proxy_pass http://localhost:3030;
 	}
 
 }
